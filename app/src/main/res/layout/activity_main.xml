@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView android:text="@string/roll_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:id="@+id/textView2" />
+
+    <EditText android:id="@+id/editRollno"
+        android:inputType="number"
+               android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
+
+    <TextView android:text="@string/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView3" />
+
+    <EditText android:id="@+id/editName"
+        android:inputType="text"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        />
+
+
+    <TextView android:text="@string/marks"
+               android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView4"/>
+
+
+    <EditText android:id="@+id/editMarks"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"/>
+
+    <Button	  android:id="@+id/btnAdd"
+        android:text="@string/add"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="26dp" />
+
+    <Button	  android:id="@+id/btnDelete"
+        android:text="@string/delete"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnAdd"
+        android:layout_toLeftOf="@+id/editMarks"
+        android:layout_toStartOf="@+id/editMarks"
+        android:layout_marginTop="15dp" />n
+
+    <Button   android:id="@+id/btnView"
+        android:text="@string/view"
+        android:layout_x="150dp"
+        android:layout_y="250dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnDelete"
+        android:layout_toLeftOf="@+id/editMarks"
+        android:layout_toStartOf="@+id/editMarks"
+        android:layout_marginTop="15dp" />
+
+    <Button   android:id="@+id/btnModify"
+        android:text="@string/modify"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnDelete"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button   android:id="@+id/btnViewAll"
+        android:text="@string/view_all"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/btnView"
+        android:layout_alignLeft="@+id/btnShowInfo"
+        android:layout_alignStart="@+id/btnShowInfo" />
+
+    <Button   android:id="@+id/btnShowInfo"
+        android:text="@string/show_info"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnView"
+        android:layout_alignLeft="@+id/btnModify"
+        android:layout_alignStart="@+id/btnModify" />
+</RelativeLayout>
